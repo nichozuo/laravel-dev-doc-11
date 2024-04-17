@@ -82,3 +82,11 @@ export function convertToEnumTree(openapi: OpenApiType) {
   }
   return output as TreeNode[];
 }
+
+export async function convertToDocTree() {
+  const response = await fetch(
+    "https://raw.githubusercontent.com/nichozuo/laravel-dev-doc-11/main/src/category.json"
+  );
+  const data = await response.json();
+  return data;
+}

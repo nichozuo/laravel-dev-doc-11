@@ -1,6 +1,7 @@
 import {
   convertToApiTree,
   convertToDBTree,
+  convertToDocTree,
   convertToEnumTree,
 } from "@/utils/treeNodesHelper";
 import { MainMenuValueType } from "typings";
@@ -31,10 +32,10 @@ export const stateActions = {
   setSub(sub: string | undefined) {
     state.session.sub = sub;
   },
-  parseTrees: (openapi: any) => {
+  parseTrees: async (openapi: any) => {
     state.session.apiTree = convertToApiTree(openapi);
     state.session.dbTree = convertToDBTree(openapi);
     state.session.enumTree = convertToEnumTree(openapi);
-    state.session.docTree = category;
+    state.session.docTree = await convertToDocTree();
   },
 };

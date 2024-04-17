@@ -4,12 +4,142 @@
     "children": [
       {
         "title": "1、新建项目",
-        "key": "1、初始化项目/1、新建项目",
+        "key": "1、初始化项目/1、新建项目.md",
         "isLeaf": true
       },
       {
-        "title": "2、引入快速开发包.md",
+        "title": "2、引入快速开发包",
         "key": "1、初始化项目/2、引入快速开发包.md",
+        "isLeaf": true
+      },
+      {
+        "title": "3、编辑项目基本文件",
+        "key": "1、初始化项目/3、编辑项目基本文件.md",
+        "isLeaf": true
+      }
+    ]
+  },
+  {
+    "title": "2、制作迁移文件",
+    "children": [
+      {
+        "title": "1. gm命令（生成迁移文件）",
+        "key": "2、制作迁移文件/1. gm命令（生成迁移文件）.md",
+        "isLeaf": true
+      },
+      {
+        "title": "2. Rename命令 （排序迁移文件）",
+        "key": "2、制作迁移文件/2. Rename命令 （排序迁移文件）.md",
+        "isLeaf": true
+      },
+      {
+        "title": "3. 使用SchemaHelper （特殊字段定义）",
+        "key": "2、制作迁移文件/3. 使用SchemaHelper （特殊字段定义）.md",
+        "isLeaf": true
+      },
+      {
+        "title": "4. ge命令（生成枚举）",
+        "key": "2、制作迁移文件/4. ge命令（生成枚举）.md",
+        "isLeaf": true
+      }
+    ]
+  },
+  {
+    "title": "3、制作模型文件",
+    "children": [
+      {
+        "title": "1、新建Base.php",
+        "key": "3、制作模型文件/1、新建Base.php.md",
+        "isLeaf": true
+      },
+      {
+        "title": "2、migrate refresh",
+        "key": "3、制作模型文件/2、migrate refresh.md",
+        "isLeaf": true
+      },
+      {
+        "title": "3、gam命令（生成所有model文件）",
+        "key": "3、制作模型文件/3、gam命令（生成所有model文件）.md",
+        "isLeaf": true
+      },
+      {
+        "title": "4、gd命令（生成单个模型文件）",
+        "key": "3、制作模型文件/4、gd命令（生成单个模型文件）.md",
+        "isLeaf": true
+      }
+    ]
+  },
+  {
+    "title": "4、创建控制器",
+    "children": [
+      {
+        "title": "1、制作BaseController.php",
+        "key": "4、创建控制器/1、制作BaseController.php.md",
+        "isLeaf": true
+      },
+      {
+        "title": "2、gc命令（创建控制器）",
+        "key": "4、创建控制器/2、gc命令（创建控制器）.md",
+        "isLeaf": true
+      },
+      {
+        "title": "3、多模块分别鉴权的配置",
+        "key": "4、创建控制器/3、多模块分别鉴权的配置.md",
+        "isLeaf": true
+      }
+    ]
+  },
+  {
+    "title": "5、创建测试",
+    "children": [
+      {
+        "title": "1、TestCase.php",
+        "key": "5、创建测试/1、TestCase.php.md",
+        "isLeaf": true
+      },
+      {
+        "title": "2、gt命令（创建测试文件）",
+        "key": "5、创建测试/2、gt命令（创建测试文件）.md",
+        "isLeaf": true
+      }
+    ]
+  },
+  {
+    "title": "6、容器化运行",
+    "children": [
+      {
+        "title": "1、容器打包",
+        "key": "6、容器化运行/1、容器打包.md",
+        "isLeaf": true
+      },
+      {
+        "title": "2、Schedule",
+        "key": "6、容器化运行/2、Schedule.md",
+        "isLeaf": true
+      },
+      {
+        "title": "3、Queue",
+        "key": "6、容器化运行/3、Queue.md",
+        "isLeaf": true
+      }
+    ]
+  },
+  {
+    "title": "7、前端代码生成",
+    "children": [
+      {
+        "title": "1、在线文档",
+        "key": "7、前端代码生成/1、在线文档.md",
+        "isLeaf": true
+      },
+      {
+        "title": "2、openapi",
+        "key": "7、前端代码生成/2、openapi.md",
+        "isLeaf": true
+      },
+      {
+        "title": "3、gencode-cli",
+        "key": "7、前端代码生成/3、gencode-cli.md",
         "isLeaf": true
       }
     ]

@@ -7,6 +7,8 @@ import { MainMenuValueType } from "typings";
 import { request } from "umi";
 import { state } from "./state";
 
+const category = require("../category.json");
+
 export const stateActions = {
   getOpenapi: async () => {
     // console.log("start request openapi");
@@ -33,5 +35,6 @@ export const stateActions = {
     state.session.apiTree = convertToApiTree(openapi);
     state.session.dbTree = convertToDBTree(openapi);
     state.session.enumTree = convertToEnumTree(openapi);
+    state.session.docTree = category;
   },
 };

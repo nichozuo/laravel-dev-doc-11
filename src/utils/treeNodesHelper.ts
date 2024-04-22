@@ -88,5 +88,13 @@ export async function convertToDocTree() {
     "https://raw.githubusercontent.com/nichozuo/laravel-dev-doc-11/main/src/category.json"
   );
   const data = await response.json();
+  console.log("convertToDocTree", data);
   return data;
+}
+
+export function convertToErTree(openapi: OpenApiType) {
+  const maps = openapi["map"] ?? undefined;
+  console.log("maps", maps.items);
+  if (!maps) return [];
+  return maps.items;
 }

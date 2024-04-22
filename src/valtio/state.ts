@@ -8,6 +8,7 @@ const session: SessionType = proxy({
   dbTree: [],
   enumTree: [{ title: "Enum", key: "enum", isLeaf: true }],
   docTree: [{ title: "Docs", key: "docs", isLeaf: true }],
+  erTree: [],
 
   main: "api",
   sub: undefined,

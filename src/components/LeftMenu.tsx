@@ -2,6 +2,7 @@ import { stateActions } from "@/valtio/actions";
 import { useMyState } from "@/valtio/state";
 import {
   ClusterOutlined,
+  ConsoleSqlOutlined,
   DatabaseOutlined,
   FileMarkdownOutlined,
   GlobalOutlined,
@@ -63,6 +64,11 @@ export default function LeftMenu() {
           key: "doc",
           title: "Readme",
           icon: <FileMarkdownOutlined />,
+        },
+        {
+          key: "er",
+          title: "ER Map",
+          icon: <ConsoleSqlOutlined />,
         },
       ]}
     />

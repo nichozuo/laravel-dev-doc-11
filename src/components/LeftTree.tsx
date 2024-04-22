@@ -27,6 +27,9 @@ export default function LeftTree() {
       case "doc":
         setItems(snap.session.docTree as TreeNode[]);
         break;
+      case "er":
+        setItems(snap.session.erTree as TreeNode[]);
+        break;
       default:
         setItems([]);
         break;

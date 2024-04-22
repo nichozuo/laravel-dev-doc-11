@@ -3,6 +3,7 @@ import {
   convertToDBTree,
   convertToDocTree,
   convertToEnumTree,
+  convertToErTree,
 } from "@/utils/treeNodesHelper";
 import { MainMenuValueType } from "typings";
 import { request } from "umi";
@@ -36,6 +37,7 @@ export const stateActions = {
     state.session.apiTree = convertToApiTree(openapi);
     state.session.dbTree = convertToDBTree(openapi);
     state.session.enumTree = convertToEnumTree(openapi);
+    state.session.erTree = convertToErTree(openapi);
     state.session.docTree = await convertToDocTree();
   },
 };

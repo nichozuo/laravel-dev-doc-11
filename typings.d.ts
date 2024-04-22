@@ -27,6 +27,7 @@ export type SessionType = {
   dbTree: TreeNode[];
   enumTree: TreeNode[];
   docTree: TreeNode[];
+  erTree: TreeNode[];
 
   main: MainMenuValueType;
   sub: string | undefined;
@@ -83,7 +84,7 @@ export type StateType = {
   session: SessionType;
 };
 
-export type MainMenuValueType = "api" | "db" | "enum" | "doc";
+export type MainMenuValueType = "api" | "db" | "enum" | "doc" | "er";
 
 type BodyType = {
   name?: string;

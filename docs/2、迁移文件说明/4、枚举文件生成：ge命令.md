@@ -33,9 +33,9 @@ use LaravelDev\App\Traits\EnumTrait;
      case Label = 'Value';  
 }
 ```
-- @intro 要填写成中文
-- @field 要填写成字段
-- @color表示在前端自动显示成tag的颜色，很重要！
 
+- intro 要填写成中文
+- field 要填写成字段
+- color表示在前端自动显示成tag的颜色，很重要！
 
 # const的部分，可以用Ai来生成，爽到起飞。

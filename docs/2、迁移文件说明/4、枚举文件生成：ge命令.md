@@ -1,17 +1,17 @@
 # php artisan ge 
+
 ### 1、99%的情况下，一定要用【表名+字段名】来生成
-```
+```bash
 php artisan ge company_admins/status
 ```
 
 ### 2、1%的情况，就是全局用的Enum，就可以直接生成
-
-```
+```bash
 php artisan ge SexEnum
 ```
 
 # 自动生成的文件
-```
+```php
 <?php  
   
 namespace App\Enums;  
@@ -39,7 +39,7 @@ use LaravelDev\App\Traits\EnumTrait;
 
 
 # const的部分，可以用Ai来生成，爽到起飞。比如我跟Ai说：`状态：已启用，审核中，已禁用`, AI答复：
-```
+```php
 <?php
 
 namespace App\Enums;

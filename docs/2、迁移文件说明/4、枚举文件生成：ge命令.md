@@ -33,43 +33,9 @@ use LaravelDev\App\Traits\EnumTrait;
      case Label = 'Value';  
 }
 ```
-#### @intro 要填写成中文
-#### @field 要填写成字段
-#### @color表示在前端自动显示成tag的颜色，很重要！
+- @intro 要填写成中文
+- @field 要填写成字段
+- @color表示在前端自动显示成tag的颜色，很重要！
 
 
-# const的部分，可以用Ai来生成，爽到起飞。比如我跟Ai说：`状态：已启用，审核中，已禁用`, AI答复：
-```php
-<?php
-
-namespace App\Enums;
-
-use LaravelDev\App\Traits\EnumTrait;
-
-/**
- * @intro StatusEnum
- * @field status
- */
-enum StatusEnum: string
-{
-    use EnumTrait;
-
-    /**
-     * @label 已启用
-     * @color #52c41a
-     */
-    case Enabled = 'Enabled';
-
-    /**
-     * @label 审核中
-     * @color #faad14
-     */
-    case UnderReview = 'UnderReview';
-
-    /**
-     * @label 已禁用
-     * @color #f5222d
-     */
-    case Disabled = 'Disabled';
-}
-```
+# const的部分，可以用Ai来生成，爽到起飞。

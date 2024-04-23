@@ -1,8 +1,4 @@
-```
-php artisan migrate:refresh --seed
-```
-
-## 标准的DatabaseSeeder.php文件
+# 标准的DatabaseSeeder.php文件
 ```php
 <?php  
   

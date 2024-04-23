@@ -1,10 +1,10 @@
-
-# 99%的情况下，一定要用【表名+字段名】来生成
+# php artisan ge 
+### 1、99%的情况下，一定要用【表名+字段名】来生成
 ```
 php artisan ge company_admins/status
 ```
 
-# 1%的情况，就是全局用的Enum，就可以直接生成
+### 2、1%的情况，就是全局用的Enum，就可以直接生成
 
 ```
 php artisan ge SexEnum
@@ -33,8 +33,8 @@ use LaravelDev\App\Traits\EnumTrait;
      case Label = 'Value';  
 }
 ```
-### @intro 要填写成中文
-### @field 要填写成字段
+#### @intro 要填写成中文
+#### @field 要填写成字段
 #### @color表示在前端自动显示成tag的颜色，很重要！
 
 

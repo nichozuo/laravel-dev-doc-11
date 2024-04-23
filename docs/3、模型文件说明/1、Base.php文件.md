@@ -6,7 +6,7 @@
 - 全局共用的scope可以写在这里！
 - @method也可以统一放在这里，编辑器中显示会比较友好！
 
-```
+```php
 <?php  
   
 namespace App\Models\Base;  

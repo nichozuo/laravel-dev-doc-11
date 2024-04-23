@@ -1,7 +1,7 @@
-
-### 每个模块下（app/Modules)，都要放一个共用的代码
-### 默认生成的控制器，都会继承BaseController
-
+# BaseController.php文件
+### 1、每个模块下（app/Modules），都要放一个BaseController.php文件
+### 2、每个模块下的所有控制器，都必须要继承BaseController（生成的控制器默认继承）
+### 3、文件内容
 ```php
 <?php  
   
@@ -18,7 +18,8 @@ class BaseController extends Controller
   
     /**  
      * @return Admins|null  
-     */    public function getUser(): ?Admins  
+     */
+    public function getUser(): ?Admins  
     {  
         if (!$this->user) {  
             $user = auth()->guard($this->guardName)->user();  
@@ -29,7 +30,8 @@ class BaseController extends Controller
   
     /**  
      * @return string  
-     */    protected function getUploadDir(): string  
+     */
+    protected function getUploadDir(): string  
     {  
         return implode('/', [  
             'manager'  

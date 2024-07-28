@@ -9,7 +9,7 @@ export default defineConfig({
   request: {},
   initialState: {},
   model: {},
-  routes: [{ path: "/", component: "index" }],
+  routes: [{ path: "/index.html", component: "index" }],
   npmClient: "npm",
   base: "/docs/",
   publicPath: "/docs/",
